@@ -3,4 +3,46 @@
     height: 40px;
     color: white;
     text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+button{
+    background-color: transparent;
+    border: none;
+    height: auto;
+}
+.button{
+    width: 20px;
+}
+.srch{
+    width: 16px;
+    margin: 0 1vw;
+}
+#prev{
+    margin-left: 20vw;
+    margin-right: 1vw;
+}
+#next{
+    margin-right:1vw;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 13, 77, 0.822);
+    color: snow;
+    font-size: 12px;
+    width: 45vw;
+    height: 25px;
+    border: solid 1.25px rgb(124, 124, 124);
+    border-radius: 5px;
+    margin-right: 25vw;
+    margin-left: 8vw;
+}
+#search:hover{
+    border: solid 1.25px snow;
+}
+#help{
+    margin-right: 5vw;
 }
