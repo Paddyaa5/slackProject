@@ -1,5 +1,5 @@
 #Toolbar{
-    background-color: #2B0A2A;
+    background-color: #311134;
     height: 40px;
     color: white;
     text-align: center;
@@ -16,11 +16,11 @@ button{
     width: 20px;
 }
 .srch{
-    width: 16px;
-    margin: 0 1vw;
+    width: 18px;
+    margin: 0 0.5vw;
 }
 #prev{
-    margin-left: 20vw;
+    margin-left: 18vw;
     margin-right: 1vw;
 }
 #next{
@@ -30,7 +30,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(60, 13, 77, 0.822);
+    background-color: #3F2042;
     color: snow;
     font-size: 12px;
     width: 45vw;
