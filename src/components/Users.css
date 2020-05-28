@@ -1,7 +1,15 @@
-#Workspaces {
+#Users {
     width: 100px;
     background-color: #39143D;
     border: #48274D solid 1px;
     color: white;
     text-align: center;
+    height: 92vh;
+    padding: 20px;
+}
+
+#Users img{
+    width: 60px;
+    border-radius: 10%;
+    margin: 10px;
 }
