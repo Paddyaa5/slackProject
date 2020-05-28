@@ -1,7 +1,54 @@
-#Channels{
+#Cats{
+    padding-top: 10px;
     width: 225px;
+    height: 280px;
     background-color: #39143D;
     border: #48274D solid 1px;
-    text-align: center;
+    text-align: left;
     color: white;
+}
+.categories{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.categories p{
+    margin-left: 5px;
+}
+.categories:hover{
+    background-color: #2F639E;
+}
+#Channels{
+    padding-top: 10px;
+    width: 225px;
+    height: 293px;
+    background-color: #39143D;
+    border: #48274D solid 1px;
+    text-align: left;
+    color: white;
+}
+.header p{
+    padding-left: 10px;
+    margin-right: 105px;
+}
+.header{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.channels{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.channels:hover{
+    background-color: #2F639E;
+}
+.channels p{
+    padding-left: 10px;
 }
