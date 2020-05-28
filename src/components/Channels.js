@@ -3,7 +3,7 @@ import './Channels.css';
 
 const Channels = () =>{
     return (
-        <div>
+        <div id="column">
             <div id="Cats">
                 <div className="categories">
                     <i class="far fa-comment-dots"></i>
@@ -21,7 +21,7 @@ const Channels = () =>{
                     <i class="fas fa-user-friends"></i>
                     <p>People</p></div>
                 <div className="categories">
-                    <i class="fas fa-braille"></i>
+                    <i class="fas fa-asterisk"></i>
                     <p>Apps</p></div>
                 <div className="categories">
                     <i class="far fa-file"></i>
@@ -47,6 +47,16 @@ const Channels = () =>{
                 <div className="channels">
                     <i class="fab fa-slack-hash"></i>
                     <p>private</p>
+                </div>
+                <div className="header">
+                    <i class="fas fa-caret-right"></i>
+                    <p>Direct Messages</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div className="header">
+                    <i class="fas fa-caret-right"></i>
+                    <p>Apps</p>
+                    <i class="fas fa-plus"></i>
                 </div>
             </div>
         </div>
