@@ -2,16 +2,19 @@ import React, {Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Toolbar from './components/Toolbar';
-import MainFeed from './components/MainFeed1';
-import RightPanel from './components/RightPanel';
+import MainFeed1 from './components/MainFeed1';
 import WorkSpaces from './components/WorkSpaces';
 import Channels from './components/Channels';
 
-class App extends Component{
 
+
+
+class App extends Component{
   state = {
   }
+
   render () {
+
   return (
     <React.Fragment>
       <BrowserRouter>
@@ -20,9 +23,8 @@ class App extends Component{
       <WorkSpaces/>
       <Channels/>
       <Switch>
-        <Route exact path = "/" render ={() => <MainFeed />} />
+        <Route exact path = "/" render ={() => <MainFeed1 />} />
       </Switch>
-      <RightPanel/>
       </div>
       </BrowserRouter>
     </React.Fragment>
