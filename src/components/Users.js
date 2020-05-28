@@ -10,13 +10,13 @@ const Users = () => {
   return(
     <div className="Users" id="Users">
       <div>
-        <img src={pa} alt="" width="100px" />
+        <img src={pa} alt="Paddy" width="100px" />
       </div>
       <div>
-        <img src={ag} alt="" width="100px" />
+        <img src={ag} alt="Andy Green" width="100px" />
       </div>
       <div>
-        <img src={rm} alt="" width="100px" />
+        <img src={rm} alt="Robert Marsh" width="100px" />
       </div>
     </div>
     )
