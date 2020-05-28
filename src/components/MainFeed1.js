@@ -5,6 +5,10 @@ import './MainFeed.css';
 import pa from '../img/user1.png';
 import ag from '../img/user2.png';
 import rm from '../img/user3.png';
+import details from '../img/details.png';
+import chatleft from '../img/textbox_left.png';
+import chatright from '../img/textbox_right.png';
+
 
 
 class MainFeed1 extends Component{
@@ -18,21 +22,27 @@ class MainFeed1 extends Component{
         ]
     }
     render (){
-        let AllChats = this.state.chats.map((chat, index) => {
+        let allChats = this.state.chats.map((chat, index) => {
             return <ChatBox key = {index} text = {chat.text} user = {chat.user} pic = {chat.pic}/>
         })
         return (
         <div id="mainFeed">
             <div id="chatTop">
-                <div id="topLeft"><p>#Private</p><p id="">25 3 Add a topic</p></div>
-                <div id="topRight"><img src='../img/information.png' alt="info"/> Details</div> 
+                <div id="topLeft">
+                    <p id="groupName"><i class="fas fa-lock" ></i> group3 <i class="far fa-star"></i></p>
+                    <p id="underTitle"><i class="far fa-user"></i> 4  |  Add a topic</p>
+                </div>
+                <div id="topRight"><img src={details} alt="details"/></div> 
             </div>
            <div id="chatSection">
-           {AllChats}
+           {allChats}
            </div>
            <div id="inputSection">
                <input placeholder="Message group3" id="messageIn" autofocus></input>
-               <div id="underInput"></div>
+               <div id="underInput">
+                   <div id="uiLeft"><img src={chatleft}/></div>
+                   <div id="uiRight"><img src={chatright}/></div>
+               </div>
            </div>
         </div>
     );

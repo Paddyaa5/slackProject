@@ -11,6 +11,7 @@ import Channels from './components/Channels';
 
 class App extends Component{
   state = {
+    
   }
 
   render () {
