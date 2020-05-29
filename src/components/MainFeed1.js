@@ -37,18 +37,21 @@ class MainFeed1 extends Component{
               username: "Robert Marsh",
               userpic: rm
     })
+        console.log("User changed to Rob");
     }
     switchUserAG = () => {
         this.setState({
             username: "Andy Green",
             userpic: ag
   })
+  console.log("User changed to Andy");
   }
   switchUserPA = () => {
     this.setState({
         username: "Paddy",
         userpic: pa
 })
+console.log("User changed to Paddy");
 }
 
     updatedMessage = event => {
