@@ -8,8 +8,7 @@ import Channels from './components/Channels';
 
 class App extends Component{
 
- 
- state = {
+  state = {
     
   }
 
@@ -19,11 +18,11 @@ class App extends Component{
         <BrowserRouter>
         <Toolbar/>
         <div id="mainSection">
-        <Users/>
-        <Channels/>
-        <Switch>
-          <Route exact path = "/" render ={() => <MainFeed1 />} />
-        </Switch>
+          <Users/>
+          <Channels/>
+          <Switch>
+            <Route exact path = "/" render ={() => <MainFeed1 />} />
+          </Switch>
         </div>
         </BrowserRouter>
       </React.Fragment>

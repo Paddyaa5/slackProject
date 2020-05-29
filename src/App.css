@@ -22,5 +22,5 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 #mainSection {
   display: flex;
-  height: 100vh;
+  min-height: 100%;
 }
