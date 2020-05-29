@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import ChatBox from './ChatBox';
 import './MainFeed.css';
-import pa from '../img/user1.png';
-import ag from '../img/user2.png';
-import rm from '../img/user3.png';
 import details from '../img/details.png';
 import chatleft from '../img/textbox_left.png';
 import chatright from '../img/textbox_right.png';
@@ -11,58 +8,24 @@ import chatright from '../img/textbox_right.png';
 
 
 class MainFeed1 extends Component{
-    state = {
-        username: "Paddy",
-        userpic: pa,
-        chats: [
-            {pic: rm, user: "Robert Marsh", text: "Good Luck"},
-            {pic: ag, user: "Andy Green", text: "So we can ignore the publishing for now?"},
-            {pic: pa, user: "Paddy", text: "Yeah was pretty clear his guidance"},
-            {pic: rm, user: "Robert Marsh", text: "Well, it's getting closer!"},
-            {pic: rm, user: "Robert Marsh", text: "Another comment"},
-        ]
+        state = {
+        newText: ""
     }
-
-    clickedNew = () => {
-        this.setState({
-          chats: [...this.state.chats,  {pic: this.state.userpic, user: this.state.username, text: this.state.newText}],
-          newText: ""
-        })
-        console.log(this.state.newTask)
-      }
-
-
-      switchUserRM = () => {
-          this.setState({
-              username: "Robert Marsh",
-              userpic: rm
-    })
-        console.log("User changed to Rob");
-    }
-    switchUserAG = () => {
-        this.setState({
-            username: "Andy Green",
-            userpic: ag
-  })
-  console.log("User changed to Andy");
-  }
-  switchUserPA = () => {
-    this.setState({
-        username: "Paddy",
-        userpic: pa
-})
-console.log("User changed to Paddy");
-}
 
     updatedMessage = event => {
         this.setState({ newText: event.target.value });
         console.log(this.state.newText)
-      };
+    };
+
+    handleClear = () => {
+        this.setState({ newText: "" })
+    }
 
     render (){
-        let allChats = this.state.chats.map((chat, index) => {
+        let allChats = this.props.chats.map((chat, index) => {
             return <ChatBox key = {index} text = {chat.text} user = {chat.user} pic = {chat.pic}/>
-        })
+    })
+
         return (
         <div id="mainFeed">
             <div id="chatTop">
@@ -76,12 +39,23 @@ console.log("User changed to Paddy");
            {allChats}
            </div>
            <div id="inputSection">
-               <input placeholder="Message group3" id="messageIn" value={this.state.newMessage} onChange={this.updatedMessage}></input>
+           <input 
+                placeholder="Message group3"
+                id="messageIn"
+                value={this.state.newText}
+                onChange={this.updatedMessage}
+                onKeyDown={(event) => {
+                    if (event.keyCode === 13) {
+                        this.props.clickedNew(this.state.newText);
+                        this.handleClear()
+                    }
+                }}
+            >
+            </input>
                <div id="underInput">
                    <div id="uiLeft"><img src={chatleft} alt="text pic"/></div>
                    <div id="uiRight"><img src={chatright} alt="text pic"/></div>
                </div>
-               <button onClick={this.clickedNew}>Post Message</button> <button onClick={this.switchUserRM}>Rob</button> <button onClick={this.switchUserAG}>Andy</button> <button onClick={this.switchUserPA}>Paddy</button>
            </div>
         </div>
     );

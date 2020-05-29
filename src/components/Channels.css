@@ -1,7 +1,7 @@
 #column{
-    height: 100%;
     background-color: #39143D;
     width: 225px;
+    min-height: 100%;
 }
 
 #Cats{
