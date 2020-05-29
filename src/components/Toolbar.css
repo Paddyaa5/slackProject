@@ -1,6 +1,6 @@
 #Toolbar{
     background-color: #311134;
-    height: 8vh;
+    height: 50px;
     color: white;
     text-align: center;
     display: flex;
@@ -33,7 +33,7 @@ button{
     background-color: #3F2042;
     color: snow;
     font-size: 12px;
-    width: 45vw;
+    width: 300vw;
     height: 25px;
     border: solid 1.25px rgb(124, 124, 124);
     border-radius: 5px;
