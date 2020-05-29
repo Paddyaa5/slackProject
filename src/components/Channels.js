@@ -23,16 +23,14 @@ class Channels extends Component{
          return(
             <div id="column">
                 <div id="Cats">
-                <div className="categories">
-                    <i class="far fa-comment-dots"></i>
-                    <p>Threads</p>
-                </div>
-                <div className="categories">
-                    <i class="fas fa-at"></i>
-                    <p>Mentions & reactions</p>
-                </div>
-                <div>
-                {this.state.isShown ? 
+                  <div className="categories">
+                      <i class="far fa-comment-dots"></i>
+                      <p>Threads</p></div>
+                  <div className="categories">
+                      <i class="fas fa-at"></i>
+                      <p>Mentions & reactions</p></div>
+                  <div>
+                  {this.state.isShown ? 
                     <div>
                         <div className="categories">
                             <i class="far fa-copy"></i>
@@ -90,9 +88,6 @@ class Channels extends Component{
                         <p>Apps</p>
                         <i class="fas fa-plus"></i>
                     </div>
-
-
-
                 </div>
             </div>
          )
