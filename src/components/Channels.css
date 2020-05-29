@@ -1,7 +1,11 @@
-#Cats{
-    padding-top: 10px;
+#column{
+    height: 100%;
+    background-color: #39143D;
     width: 225px;
-    height: 280px;
+}
+
+#Cats{
+    padding: 10px 0;
     background-color: #39143D;
     border: #48274D solid 1px;
     text-align: left;
@@ -11,34 +15,50 @@
     height: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 16px;
-    margin-left: 5px;
+    padding-left: 5px;
 }
 .categories p{
     margin-left: 5px;
+    width: 195px;
 }
 .categories:hover{
     background-color: #2F639E;
 }
-#Channels{
+#menus{
     padding-top: 10px;
-    width: 225px;
-    height: 293px;
     background-color: #39143D;
     border: #48274D solid 1px;
+    border-bottom: none;
     text-align: left;
     color: white;
 }
+button{
+    height: 30px;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 5px;
+    padding-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+button p{
+    padding-left: 10px;
+}
 .header p{
     padding-left: 10px;
-    margin-right: 105px;
+    width: 190px;
 }
 .header{
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 16px;
-    margin-left: 5px;
+    margin: 0 7px;
 }
 .channels{
     padding-left: 10px;
