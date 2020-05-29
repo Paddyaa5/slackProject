@@ -1,7 +1,60 @@
-#Channels{
+#column{
+    height: 92vh;
+    background-color: #39143D;
     width: 225px;
+}
+
+#Cats{
+    padding: 10px 0;
     background-color: #39143D;
     border: #48274D solid 1px;
-    text-align: center;
+    text-align: left;
     color: white;
+}
+.categories{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.categories p{
+    margin-left: 5px;
+    width: 195px;
+}
+.categories:hover{
+    background-color: #2F639E;
+}
+#Channels{
+    padding-top: 10px;
+    background-color: #39143D;
+    border: #48274D solid 1px;
+    border-bottom: none;
+    text-align: left;
+    color: white;
+}
+.header p{
+    padding-left: 10px;
+    width: 190px;
+}
+.header{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 0 7px;
+}
+.channels{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.channels:hover{
+    background-color: #2F639E;
+}
+.channels p{
+    padding-left: 10px;
 }

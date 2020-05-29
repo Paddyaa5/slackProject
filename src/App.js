@@ -7,7 +7,12 @@ import Users from './components/Users';
 import Channels from './components/Channels';
 
 class App extends Component{
-  
+
+ 
+ state = {
+    
+  }
+
   render () {
     return (
       <React.Fragment>
