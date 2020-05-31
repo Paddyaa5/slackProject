@@ -10,25 +10,41 @@ import pa from './img/user1.png';
 import ag from './img/user2.png';
 import rm from './img/user3.png';
 
+
 class App extends Component{
   state = {
     username: "Paddy",
     userpic: pa,
+    time: '',
     chats: [
-      {pic: rm, user: "Robert Marsh", text: "Good Luck"},
-      {pic: ag, user: "Andy Green", text: "So we can ignore the publishing for now?"},
-      {pic: pa, user: "Paddy", text: "Yeah was pretty clear his guidance"},
-      {pic: rm, user: "Robert Marsh", text: "Well, it's getting closer!"},
-      {pic: rm, user: "Robert Marsh", text: "Another comment"},
+      {pic: rm, user: "Robert Marsh", text: "Good Luck", time: "4:00PM"},
+      {pic: ag, user: "Andy Green", text: "So we can ignore the publishing for now?", time: "4:00PM"},
+      {pic: pa, user: "Paddy", text: "Yeah was pretty clear his guidance", time: "4:00PM"},
+      {pic: rm, user: "Robert Marsh", text: "Well, it's getting closer!", time: "4:00PM"},
+      {pic: rm, user: "Robert Marsh", text: "Another comment", time: "4:00PM"},
   ]
   }
 
   clickedNew = (newText) => {
+    var date, TimeType, hour, minutes, fullTime;
+    date = new Date();
+    hour = date.getHours(); 
+    //Set AM or PM
+    if(hour <= 11){TimeType = 'AM';}
+    else{TimeType = 'PM';}
+    if( hour > 12 ){hour = hour - 12;}
+    //If the hour shows as 0 convert to 12
+    if( hour === 0 ){hour = 12;} 
+    minutes = date.getMinutes();
+    if(minutes < 10){minutes = '0' + minutes.toString();}
+    //Display the time like 4:00PM
+    fullTime = hour.toString() + ':' + minutes.toString() + TimeType.toString();
+    //Set the elements of the posted message
     let newPic = this.state.userpic
     let newUsername = this.state.username
+    let curTime = fullTime;
     this.setState({
-      chats: [...this.state.chats,  {pic: newPic, user: newUsername, text: newText}],
-      // newText: ""
+      chats: [...this.state.chats,  {pic: newPic, user: newUsername, text: newText, time: curTime}],
     })
 }
   
@@ -59,11 +75,11 @@ class App extends Component{
     return (
       <React.Fragment>
         <BrowserRouter>
-        <Toolbar/>
+        <div id="toolbar"><Toolbar/></div>
         <div id="mainSection">
-          <Users 
-            switchRM={this.switchUserRM} switchAG={this.switchUserAG} switchPA={this.switchUserPA}/>
-          <Channels/>
+        <div id="users"><Users 
+            switchRM={this.switchUserRM} switchAG={this.switchUserAG} switchPA={this.switchUserPA}/></div>
+          <div id="channels"><Channels/></div>
           <Switch>
             <Route exact path = "/" render ={() => <MainFeed1 chats={this.state.chats} clickedNew={this.clickedNew} />} />
           </Switch>

@@ -9,7 +9,7 @@ const ChatBox = (props) => {
                     <img id="pic" src={props.pic} alt="user pic"/>
                 </div>
                 <div id="right">
-                    <p id="name">{props.user}<span id="time"> 4:45 pm</span></p>
+                    <p id="name">{props.user}<span id="time">{props.time}</span></p>
                     <p id="text">{props.text}</p>
                 </div>
             </div>
