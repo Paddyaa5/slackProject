@@ -4,6 +4,7 @@
   font-family: "circularStd";
 }
 
+
 /* hides all outlines for buttons / inputs etc */
 input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
@@ -23,4 +24,18 @@ input:focus, select:focus, textarea:focus, button:focus {
 #mainSection {
   display: flex;
   min-height: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  #users {
+    display: none;
+  }
+  #toolbar{
+    display: none;
+  }
+  #channels{
+    display: none;
+  }   
+
 }

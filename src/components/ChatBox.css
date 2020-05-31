@@ -4,6 +4,11 @@
     display: flex;
 }
 
+#chatSection{
+    overflow-y: auto;
+    height: 400px;
+}
+
 #time{
     font-family: "circularBook";
     color: slategray;
@@ -43,6 +48,7 @@
     text-align: left;
     padding: 20px;
     display: flex;
+    align-items:center;
 }
 
 #topLeft {
@@ -50,9 +56,23 @@
     
 }
 
+#topLeftMob{
+    width: 100%;
+    
+}
+
+#topLeftMob img{
+    width: 30px;
+    padding-top: 4px;
+    padding-left: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
 #groupName {
     font-size: 14px;
 }
+
 #underTitle {
     padding-top: 5px;
     font-size: 13px;
@@ -64,14 +84,8 @@
 
 }
 
-#inputSection{
-    margin: 20px;
-    border: 1px slategray solid;
-    border-radius: 4px;
-}
-
 #messageIn{
-    width: 98%;
+    width: 97%;
     border: 0;
     font-size: 15px;
     font-family: "circularBook";
@@ -88,9 +102,11 @@
     border-bottom-right-radius: 4px;
     display: flex;
 }
+
 #uiLeft{
     width: 50%;
     text-align: Left;
+    padding-left: 2px;
 }
 
 #uiLeft img{
@@ -101,9 +117,52 @@
 #uiRight{
     width: 50%;
     text-align: right;
+    padding-right: 2px;
 }
 
 #uiRight img{
     height: 40px;
     padding-right: 4px;
 }
+
+
+@media screen and (max-width: 800px) {
+    #topLeft {
+      display: none;
+    }
+    #chatTop {
+        padding: 4px;
+    }
+    #chatSection {
+        height: 84vh;
+    }
+    #inputSection{
+        margin: 0px;
+        border-top: 1px slategray solid;
+        align-items: center;
+        border-radius: 0px;
+        width: 100%;
+    }
+    #underInput{
+        display: none;
+        height: 0px;
+    }
+    #messageIn{
+        width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    #topLeftMob {
+      display: none;
+    }
+    #chatTop {
+        padding: 20px;
+    }
+    #inputSection{
+        margin: 20px;
+        border: 1px slategray solid;
+        border-radius: 4px;
+        align-items: center;
+    }
+  }
