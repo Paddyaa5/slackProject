@@ -1,11 +1,11 @@
 #Users {
     width: 100px;
-    min-height: 100%;
+    min-height: 100vh;
     background-color: #39143D;
-    border: #48274D solid 1px;
+    border-right: #48274D solid 1px;
+    border-top: #48274D solid 1px;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 #Users img{

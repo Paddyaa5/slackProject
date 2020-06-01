@@ -5,7 +5,6 @@ import Toolbar from './components/Toolbar';
 import MainFeed1 from './components/MainFeed1';
 import Users from './components/Users';
 import Channels from './components/Channels';
-
 import pa from './img/user1.png';
 import ag from './img/user2.png';
 import rm from './img/user3.png';
@@ -17,11 +16,10 @@ class App extends Component{
     userpic: pa,
     time: '',
     chats: [
-      {pic: rm, user: "Robert Marsh", text: "Good Luck", time: "4:00PM"},
-      {pic: ag, user: "Andy Green", text: "So we can ignore the publishing for now?", time: "4:00PM"},
-      {pic: pa, user: "Paddy", text: "Yeah was pretty clear his guidance", time: "4:00PM"},
-      {pic: rm, user: "Robert Marsh", text: "Well, it's getting closer!", time: "4:00PM"},
-      {pic: rm, user: "Robert Marsh", text: "Another comment", time: "4:00PM"},
+      {pic: rm, user: "Robert Marsh", text: "Here's some sample messages!", time: "4:00PM"},
+      {pic: ag, user: "Andy Green", text: "How about another sample message", time: "4:01PM"},
+      {pic: pa, user: "Paddy", text: "Looks good..", time: "4:02PM"},
+      {pic: rm, user: "Robert Marsh", text: "Ok thank should be enough!", time: "4:03PM"},
   ]
   }
 
