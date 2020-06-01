@@ -34,7 +34,7 @@
     text-align: left;
     color: white;
 }
-button{
+#showHide{
     height: 30px;
     width: 225px;
     display: flex;
@@ -45,7 +45,7 @@ button{
     color: white;
     cursor: pointer;
 }
-button p{
+#showHide p{
     padding-left: 10px;
 }
 .header p{
@@ -58,13 +58,29 @@ button p{
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    margin: 0 7px;
+    padding: 0 7px;
 }
 .channels{
     padding-left: 10px;
     display: flex;
     align-items: center;
     height: 30px;
+}
+.chanButton{
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    width: 225px;
+    padding: 0 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.chanButton p{
+    padding-left: 10px;
+    text-align: left;
+    width: 190px;
 }
 .channels:hover{
     background-color: #2F639E;
