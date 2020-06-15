@@ -1,3 +1,5 @@
+## About this Project
+
 A group project focused on re-creating the look and feel of the Slack app,
 
 You can type and enter a new message in the chat box, click icons on the left to type as a different user
