@@ -9,6 +9,4 @@ You can type and enter a new message in the chat box, click icons on the left to
 To start you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
