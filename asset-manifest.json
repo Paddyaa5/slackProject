@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/slackProject/static/css/main.211a814f.chunk.css",
+    "main.js": "/slackProject/static/js/main.63b3b1b9.chunk.js",
+    "main.js.map": "/slackProject/static/js/main.63b3b1b9.chunk.js.map",
+    "runtime-main.js": "/slackProject/static/js/runtime-main.e7e42282.js",
+    "runtime-main.js.map": "/slackProject/static/js/runtime-main.e7e42282.js.map",
+    "static/js/2.e63c1e99.chunk.js": "/slackProject/static/js/2.e63c1e99.chunk.js",
+    "static/js/2.e63c1e99.chunk.js.map": "/slackProject/static/js/2.e63c1e99.chunk.js.map",
+    "index.html": "/slackProject/index.html",
+    "precache-manifest.4c26ab975d5446c54c46e4b7db8dcabc.js": "/slackProject/precache-manifest.4c26ab975d5446c54c46e4b7db8dcabc.js",
+    "service-worker.js": "/slackProject/service-worker.js",
+    "static/css/main.211a814f.chunk.css.map": "/slackProject/static/css/main.211a814f.chunk.css.map",
+    "static/js/2.e63c1e99.chunk.js.LICENSE.txt": "/slackProject/static/js/2.e63c1e99.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/slackProject/static/media/CircularStd-Medium.e4ba63a6.ttf",
+    "static/media/textbox_left.png": "/slackProject/static/media/textbox_left.4fa8e1af.png",
+    "static/media/textbox_right.png": "/slackProject/static/media/textbox_right.f22b826a.png",
+    "static/media/user1.png": "/slackProject/static/media/user1.d7ed1c40.png",
+    "static/media/user2.png": "/slackProject/static/media/user2.87db3ab4.png",
+    "static/media/user3.png": "/slackProject/static/media/user3.821df8bf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7e42282.js",
+    "static/js/2.e63c1e99.chunk.js",
+    "static/css/main.211a814f.chunk.css",
+    "static/js/main.63b3b1b9.chunk.js"
+  ]
+}
