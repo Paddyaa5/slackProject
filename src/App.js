@@ -79,7 +79,7 @@ class App extends Component{
             switchRM={this.switchUserRM} switchAG={this.switchUserAG} switchPA={this.switchUserPA}/></div>
           <div id="channels"><Channels/></div>
           <Switch>
-            <Route exact path = "/" render ={() => <MainFeed1 chats={this.state.chats} clickedNew={this.clickedNew} />} />
+            <Route exact path = "/slackProject/" render ={() => <MainFeed1 chats={this.state.chats} clickedNew={this.clickedNew} />} />
           </Switch>
         </div>
         </BrowserRouter>
